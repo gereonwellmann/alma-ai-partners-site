@@ -17,6 +17,8 @@ script.js         Minimales JS (mobile Navigation); Seite muss auch ohne JS funk
 CLAUDE.md         Diese Datei
 ```
 
+Weitere Dateien: `404.html` (Fehlerseite, absolute Pfade), `robots.txt`, `sitemap.xml` (bei neuen Seiten oder Sprachen ergänzen; `datenschutz.html` bewusst nicht enthalten, da noindex), `CNAME` (alma-ai-partners.com), `assets/` (Favicon, Apple-Touch-Icon, `og-image.png`, Logo für E-Mail-Signatur, LinkedIn-Bilder). `brand/` (Logo-Quellen, Brand-Guide, E-Mail-Signatur) ist per `.gitignore` nicht veröffentlicht.
+
 Mehrsprachigkeit: Deutsch liegt im Root, zusätzlich `en/index.html`, `pt/index.html`, `es/index.html`, `fr/index.html` (nur Startseiten, Pfade zu CSS/JS mit `../`). Sprachumschalter (`.lang-switch`) und `hreflang`-Links stehen in allen Seiten. Impressum und Datenschutz existieren nur auf Deutsch; die anderen Sprachen verlinken darauf mit Hinweis. Inhaltsänderungen an der Startseite müssen in allen fünf Sprachfassungen nachgezogen werden.
 
 Header und Footer sind in allen HTML-Dateien dupliziert (kein Build, keine Includes). Änderungen an Navigation oder Footer müssen in allen drei Dateien nachgezogen werden.
