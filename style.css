@@ -153,6 +153,43 @@ a:hover { color: var(--accent-hover); }
   .js .nav-list a { padding: 0.4rem 0.25rem; width: auto; }
 }
 
+/* ---------- Sprachumschalter ---------- */
+
+.brand { order: 1; }
+.lang-switch { order: 2; }
+.nav-toggle { order: 3; }
+.site-nav { order: 4; }
+
+.lang-switch ul {
+  display: flex;
+  gap: 0.1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.lang-switch a {
+  display: inline-block;
+  padding: 0.65rem 0.55rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+.lang-switch a:hover { color: var(--text); }
+.lang-switch a[aria-current="true"] {
+  color: var(--text);
+  border-bottom-color: var(--accent);
+}
+
+@media (min-width: 48rem) {
+  .site-nav { order: 2; }
+  .lang-switch { order: 3; }
+}
+
+.footer-note { flex-basis: 100%; margin: 0; font-size: 0.9rem; }
+
 /* ---------- Buttons ---------- */
 
 .btn {

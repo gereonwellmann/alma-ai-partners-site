@@ -17,7 +17,9 @@ script.js         Minimales JS (mobile Navigation); Seite muss auch ohne JS funk
 CLAUDE.md         Diese Datei
 ```
 
-Header und Footer sind in allen drei HTML-Dateien dupliziert (kein Build, keine Includes). Änderungen an Navigation oder Footer müssen in allen drei Dateien nachgezogen werden.
+Mehrsprachigkeit: Deutsch liegt im Root, zusätzlich `en/index.html`, `pt/index.html`, `es/index.html`, `fr/index.html` (nur Startseiten, Pfade zu CSS/JS mit `../`). Sprachumschalter (`.lang-switch`) und `hreflang`-Links stehen in allen Seiten. Impressum und Datenschutz existieren nur auf Deutsch; die anderen Sprachen verlinken darauf mit Hinweis. Inhaltsänderungen an der Startseite müssen in allen fünf Sprachfassungen nachgezogen werden.
+
+Header und Footer sind in allen HTML-Dateien dupliziert (kein Build, keine Includes). Änderungen an Navigation oder Footer müssen in allen drei Dateien nachgezogen werden.
 
 ## Befehle
 
